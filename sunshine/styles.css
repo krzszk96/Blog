@@ -1,0 +1,13 @@
+.container{
+  height: 70vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.block{
+  background-color: aquamarine;
+  margin: 5px;
+  width: 50px;
+  text-align: center;
+  padding-top: 10px;
+}
