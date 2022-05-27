@@ -4,9 +4,6 @@
   align-items: flex-end;
   justify-content: center;
 }
-.block-wrap{
-  width: 60px;
-}
 .controls{
   display: flex;
   align-items: flex-end;

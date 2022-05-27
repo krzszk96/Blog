@@ -3,9 +3,9 @@ let builds = document.getElementById('build')
 var blocks = [10,20,10,20,10,30,10]
 
 var blocksObj = [
-  {height: 10, sunshine: true, color: 'red'},
-  {height: 20, sunshine: true, color: 'red'},
-  {height: 30, sunshine: true, color: 'red'},
+  {height: 10, sunshine: false, color: 'green'},
+  {height: 20, sunshine: false, color: 'green'},
+  {height: 30, sunshine: false, color: 'green'},
   {height: 20, sunshine: true, color: 'red'},
   {height: 40, sunshine: true, color: 'red'},
   {height: 10, sunshine: true, color: 'red'},
