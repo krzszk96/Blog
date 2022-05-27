@@ -29,22 +29,18 @@ function checkSunshine(array){
   builds.innerHTML = html
 }
 
-function getHeightValues(number, index){
-  if (!number == 0) blocks[index]= number
-}
-
 checkSunshine(blocks)
 
 const inputs = document.querySelectorAll('#b0, #b1, #b2, #b3, #b4, #b5, #b6')
 
 inputs.forEach(input => {
-  input.addEventListener('change', updateValue)
+  input.addEventListener('change', updateHeight)
 });
 
-function updateValue(e) {
+function updateHeight(e) {
   let number = e.target.id.slice(-1)
   let userinput = e.target.value
   if(userinput <= 0 || userinput > 50) return alert("please put number between 1 and 50")
-  getHeightValues(userinput, number)
+  blocks[number]= userinput
   checkSunshine(blocks)
 }
