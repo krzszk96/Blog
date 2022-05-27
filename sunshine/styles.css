@@ -1,8 +1,22 @@
-.container{
+.panel{
   height: 70vh;
   display: flex;
   align-items: flex-end;
   justify-content: center;
+}
+.block-wrap{
+  width: 60px;
+}
+.controls{
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.controls input{
+  height: 20px;
+  width: 50px;
+  padding: 0 !important;
+  margin: 3px;
 }
 .block{
   background-color: aquamarine;
@@ -10,4 +24,6 @@
   width: 50px;
   text-align: center;
   padding-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
