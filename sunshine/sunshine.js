@@ -1,14 +1,15 @@
 
 let builds = document.getElementById('build')
 var blocks = [10,20,10,20,10,30,10]
+
 var blocksObj = [
-  {height: '10', sunshine: true, color: 'red'},
-  {height: '20', sunshine: true, color: 'red'},
-  {height: '30', sunshine: true, color: 'red'},
-  {height: '20', sunshine: true, color: 'red'},
-  {height: '40', sunshine: true, color: 'red'},
-  {height: '10', sunshine: true, color: 'red'},
-  {height: '20', sunshine: true, color: 'red'}]
+  {height: 10, sunshine: true, color: 'red'},
+  {height: 20, sunshine: true, color: 'red'},
+  {height: 30, sunshine: true, color: 'red'},
+  {height: 20, sunshine: true, color: 'red'},
+  {height: 40, sunshine: true, color: 'red'},
+  {height: 10, sunshine: true, color: 'red'},
+  {height: 20, sunshine: true, color: 'red'}]
 
 
 function checkSunshineObj(array){
@@ -20,8 +21,7 @@ function checkSunshineObj(array){
     array[j].color = 'red'
 
     for(let i=j-1; i>=0; i--){
-      if (array[j].height <= array[i].height)
-        array[j].sunshine = false
+      if (array[j].height <= array[i].height) array[j].sunshine = false
     }     
     if(array[j].sunshine == true) array[j].color = 'green'
   }  
