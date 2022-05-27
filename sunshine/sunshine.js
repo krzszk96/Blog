@@ -11,7 +11,7 @@ function checkSunshine(array){
               background-color: green">
               ${array[0]}m
             </div>`
-            
+
   for(let j=1; j<array.length; j++){
     for(let i=j-1; i>=0; i--){
       if (array[j] <= array[i]) check = false
@@ -43,7 +43,8 @@ inputs.forEach(input => {
 
 function updateValue(e) {
   let number = e.target.id.slice(-1)
-  if(e.target.value <= 0 || e.target.value > 50) return alert("please put number between 1 and 50")
-  getHeightValues(e.target.value, number)
+  let userinput = e.target.value
+  if(userinput <= 0 || userinput > 50) return alert("please put number between 1 and 50")
+  getHeightValues(userinput, number)
   checkSunshine(blocks)
 }
