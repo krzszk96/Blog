@@ -1,0 +1,10 @@
+<div class="wrap">
+  <div class="likescount">{{ likescount }} </div>
+  <a (click)="updateLikesCount()">
+    <i class="fa fa-heart" aria-hidden="true" [ngClass]="likeclicked ? 'active' : ''"></i>
+  </a>
+</div>
+<!-- <div class="wrap">
+  <div class="likescount">{{ likescount }} </div>
+  <button (click)="updateLikesCount()">Like</button>
+</div> -->
