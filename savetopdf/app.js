@@ -27,9 +27,7 @@ function printDoc(){
 }
 
 function generateTrackingNumber(){  
-  let number = Math.floor(Math.random() * 100000000).toString()
-  let nrlength = number.length
-  if(nrlength<8) number = '0' + number
+  let number = Math.floor(10000000 + Math.random() * 90000000).toString()  
   let formatnumber = "0088 0000 " + number.substring(0,4) + " " + number.substring(4,8)
   localStorage.setItem('trackingnumber', formatnumber)
   document.getElementById('trackingnr').innerHTML = "Tracking number: " + formatnumber
