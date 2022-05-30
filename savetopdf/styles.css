@@ -1,0 +1,39 @@
+@media print {
+  body{
+      width: 21cm;
+      height: 29.7cm;
+      margin: 30mm 45mm 30mm 45mm; 
+ } 
+}
+.generate-wrap{
+  margin: 50px;
+}
+label, .trackingnr {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.generatenumber, .printbtn{
+  background-color: #2962ff;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.field{
+  margin: 10px 0;
+}
+.printbtn{
+  margin-top: 10px;
+}
+.packagelabelwrap{
+  width: 500px;
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid #000;
+}
+.labelinfo{
+  
+  margin: 10px 0;
+}

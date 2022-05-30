@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="generate-wrap">
+    <h1>Generate label.</h1>
+    <form>
+      <div class="field">
+        <label for="">Name and surname:</label>
+        <input type="text" id="name" required>
+      </div>
+      <div class="field">
+        <label for="">Street:</label>
+        <input type="text" id="street" required>
+      </div>
+      <div class="field">
+        <label for="">City/Code:</label>
+        <input type="text" id="city" required>
+      </div>
+      <div class="field">
+        <label for="">E-mail:</label>
+        <input type="text" id="email" required>
+      </div>
+    </form>
+
+    <div class="trackingnr" id="trackingnr">Tracking number:</div>
+    <button class="generatenumber" onclick="generateTrackingNumber()">Generate Tracking nr</button>
+    <a href="print.html" target="_blank" onclick="saveData()"><button class="printbtn">Print</button></a>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
