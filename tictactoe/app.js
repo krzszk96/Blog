@@ -86,5 +86,7 @@ function restart(){
   for (let i=0; i< board.length; i++) board[i]=''
   buttons.forEach(btn => {btn.disabled = false})
   winneris.style.display = "none";
+  userchoice = ''
+  aichoice = ''
   displayBoard()
 }
