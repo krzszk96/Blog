@@ -4,6 +4,11 @@ h1{
   font-weight: bold;
   text-align: center;
 }
+@media only screen and (max-width: 600px) {
+  h1{
+    font-size: 2rem;
+  }
+}
 .userpanel{
   position: relative;
   text-align: center;
