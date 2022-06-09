@@ -1,0 +1,32 @@
+
+body{
+  margin: 0;
+}
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+}
+.content h1{
+  font-size: 5rem;
+  text-shadow: 4px 2px 3px rgba(66, 68, 90, 1);
+}
+.content p{
+  font-size: 2rem;
+}
