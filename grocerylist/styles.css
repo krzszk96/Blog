@@ -1,0 +1,12 @@
+.container{
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+.container input{
+  margin: 10px;
+}
+.container .formbtn{
+  width: 150px;
+  margin: 10px;
+}
