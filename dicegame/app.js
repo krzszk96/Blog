@@ -1,7 +1,9 @@
 var diceimages = new Array()
 var diceContainer = document.getElementById('dices')  
 var displaySum = document.getElementById('sumofnumbers')
-var sum = 0;
+var showhighscore = document.getElementById('highscore')
+var sum = 0
+var highscore
 
 function getDices(){
   for(let i=0; i <6; i++){
@@ -20,6 +22,7 @@ function displayRandomDices(){
     diceContainer.appendChild(imgnode)
   }
   displaySum.innerHTML = "You rolled " + sum + " !"
+  saveHighScore(sum)
   sum = 0
 }
 function generateRandomNumber(){
@@ -29,8 +32,11 @@ function clearDisplay(){
   while (diceContainer.firstChild) 
     diceContainer.firstChild.remove()
 }
+function saveHighScore(score){
+  if(localStorage.getItem('highscore') == null ) localStorage.setItem('highscore', score)
+  if(localStorage.getItem('highscore') < score) localStorage.setItem('highscore', score)
+  showhighscore.innerHTML =  localStorage.getItem('highscore')
+}
 
 getDices()
 displayRandomDices()
-
-console.log(sum);
