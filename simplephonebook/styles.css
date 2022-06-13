@@ -1,0 +1,45 @@
+body{
+  margin: 50px;
+}
+input[type='text'], input[type='number']{
+  padding: 10px;
+  margin-bottom: 10px;
+  max-width: 250px;
+}
+input[type='submit']{
+  border: none;
+  padding: 10px 30px;
+  max-width: 150px;
+  cursor: pointer;
+  font-family: arial, sans-serif;
+  font-weight: 900;
+}
+.delete-btn{
+  border: none;
+  padding: 5px 20px;
+  background-color: rgb(180, 90, 90);
+  cursor: pointer;
+}
+.add-contact-wrap{
+  display: flex;
+  flex-direction: column;
+}
+h1{
+  font-family: arial, sans-serif;;
+}
+table {
+  margin-top: 30px;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}

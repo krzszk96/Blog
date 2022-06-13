@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <h1>Simple contacts book</h1>
+  <div class="add-contact-wrap">
+    <div class="col">
+      <input type="text" id="name" placeholder="Name">
+      <input type="text" id="lastname" placeholder="Last name">
+      <input type="number" id="phone" placeholder="Phone">
+      <input type="text" id="email" placeholder="E-mail">
+    </div>
+    <input type="submit" onclick="saveNewContact()">
+  </div>
+
+  <table id="tableofcontacts">
+    <tr>
+      <th>Name</th>
+      <th>Last Name</th>
+      <th>Phone</th>
+      <th>E-mail</th>
+      <th></th>
+    </tr>
+    <tr>
+      <td>Maria</td>
+      <td>Anders</td>
+      <td>789 456 123</td>
+      <td>maria@test.com</td>
+      <td>
+        <button class="delete-btn">delete</button>
+      </td>
+    </tr>
+  </table>
+
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>
