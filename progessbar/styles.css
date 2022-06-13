@@ -1,0 +1,40 @@
+#loading{
+  /* display: none; */
+  margin-top: 20px;
+  margin-left: 50px;
+  font-weight: 900;
+}
+.progress-bar{
+  /* display: none; */
+  margin-top: 10px;
+  margin-left: 50px;
+  border-radius: 25px;
+  background-color: #2962ff;
+  animation: loadBar 1s ease-in;
+  animation-fill-mode: forwards;
+}
+@keyframes loadBar {
+  0% {
+    width: 10px;
+  }
+  100% {
+    width: 200px;
+  }
+}
+#done{
+  /* display: none; */
+  margin-top: 20px;
+  margin-left: 50px;
+  font-weight: 900;
+}
+.btn{
+  margin-top: 50px;
+  margin-left: 50px;
+  padding: 10px 40px;
+  border: none;
+  border-radius: 25px;
+  background-color: #2962ff;
+  font-weight: 900;
+  color: aliceblue;
+  cursor: pointer;
+}
