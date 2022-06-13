@@ -5,7 +5,7 @@ let email_input = document.getElementById('email')
 let table = document.getElementById('tableofcontacts')
 var contacts = []
 
-class person {
+class Person {
 
   constructor(name, lastname, phone, email){
     this.name = name
@@ -17,7 +17,7 @@ class person {
 
 function saveNewContact(){
   if(validateInputs() != true) return
-  let new_contanct = new person(
+  let new_contanct = new Person(
     name_input.value, 
     lastname_input.value, 
     phone_input.value, 
