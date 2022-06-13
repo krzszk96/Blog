@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="generator-container">
+    <div class="password" id="passwd">&nbsp;</div>
+    <input type="checkbox" id="uppercase" name="uppercase">
+    <label> Uppercase</label><br>
+    <input type="checkbox" id="numbers" name="numbers">
+    <label> Numbers</label><br>
+    <input type="checkbox" id="symbols" name="symbols">
+    <label> Symbols</label><br><br>
+    <label> Password length:</label><br>
+    <input type="range" name="passlength" min="10" max="25" onchange="updateTextInput(this.value);">
+    <input type="text" id="passlength" value="10"><br><br>
+
+    <Button class="generate-btn" onclick="generatePasswd()">Generate password</Button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

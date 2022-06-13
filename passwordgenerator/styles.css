@@ -1,0 +1,51 @@
+body{
+  margin: 0;
+  background-color:#0075ff;
+}
+.generator-container{
+  min-width: 300px;
+  min-height: 300px;
+  position: absolute;
+  top: 50%; right: 50%;
+  transform: translate(50%,-50%);
+  padding: 30px;
+  background-color: #e5e9f2;
+  border-radius: 15px;
+}
+.password{
+  font-family: arial, sans-serif;
+  padding: 10px 20px;
+  border: 1px solid #8190a4;
+  background-color: #f8f9fa;
+  border-radius: 30px;
+  color: #8190a4;
+}
+input{
+  margin-left: 20px;
+  margin-top: 20px;
+}
+label{
+  font-family: arial, sans-serif;
+  font-weight: 400;
+  margin-left: 20px;
+}
+#passlength{
+  width: 20px;
+  height: 20px;
+  font-family: arial, sans-serif;
+  padding: 10px 20px;
+  border: 1px solid #8190a4;
+  background-color: #f8f9fa;
+  border-radius: 30px;
+}
+.generate-btn{
+  font-family: arial, sans-serif;
+  padding: 10px 20px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #0075ff;
+  color: #fff;
+  border-radius: 30px;
+  cursor: pointer;
+}
